@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+
+    <!-- div class for the calculator body -->
+    <div class="calc-body">
+        <!-- display for the calculator -->
+        <div class="display">
+            <input type="text" id="disp">
+        </div>
+
+
+        
+        <div class="imp-btns">
+            <button class="clear" onclick="clear1()">C</button>
+            <button class="clear" onclick="clearall()">AC</button>
+
+        </div>
+        
+        
+        <div class="action-btns">
+            <button id="actions" onclick="ddata('+')">+</button>
+            <button id="actions" onclick="ddata('-')">-</button>
+            <button id="actions" onclick="ddata('*')">*</button>
+            <button id="actions" onclick="ddata('/')">/</button>
+            <button id="actions" onclick="ddata('%')">%</button>
+        </div>
+
+        <div class="num-1">
+            <button class="numbers" onclick="ddata('1')">1</button>
+            <button class="numbers" onclick="ddata('2')">2</button>
+            <button class="numbers" onclick="ddata('3')">3</button>
+            <button class="numbers" onclick="ddata('4')">4</button>
+            <button class="numbers" onclick="ddata('5')">5</button>
+        </div>
+
+        <div class="num-2">
+            <button class="numbers" onclick="ddata('6')">6</button>
+            <button class="numbers" onclick="ddata('7')">7</button>
+            <button class="numbers" onclick="ddata('8')">8</button>
+            <button class="numbers" onclick="ddata('9')">9</button>
+            <button class="numbers" onclick="ddata('10')">0</button>
+        </div>
+
+        <div class="num-3">
+            <button class="numbers" onclick="ddata('00')">00</button>
+            <button class="numbers" onclick="ddata('.')">.</button>
+            <button class="numbers" id="equals" onclick="calcdata()">=</button>
+            
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
